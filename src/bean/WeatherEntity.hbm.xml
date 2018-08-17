@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="bean.WeatherEntity" table="weather" schema="interview">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+        </id>
+        <property name="city">
+            <column name="city" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="weather">
+            <column name="weather" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="temperature">
+            <column name="temperature" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="winddirection">
+            <column name="winddirection" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="windpower">
+            <column name="windpower" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="reporttime">
+            <column name="reporttime" sql-type="varchar(255)" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
